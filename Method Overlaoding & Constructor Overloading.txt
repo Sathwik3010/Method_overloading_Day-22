@@ -1,0 +1,40 @@
+method Overloading
+------------------
+overloading in java is a fundamental concept of polymorphism that allows multiple methods or constructors to have the same names but different parameters this enables developers to create more flexible and intuitive by multiple ways to perform simple operations
+
+key characteristics of overloading
+-----------------------------------
+compile-time polymorphism(also called static polymorphism)
+methods / constructors must have the same name.
+
+must have different in parameters list(number, type or order of parameters).
+return type alone  cannot differentiate overloaded methods.
+access modifiers can be different.
+
+method overloading
+------------------
+method overloading allows a class to have multiple methods with same name but different parameters list. the compiler determine which method to call based on the arguments passed the method invocation.
+
+rules for method overloading
+-----------------------------
+1. different number of parameters.
+2. different types of parameters.
+3. different order of parameters.
+4. return type can be different but cannot be the sole differentiator.
+
+constructor overloading
+-----------------------
+Constructor overloading allows a class to have multiple constructor with different parameters lists. this provide flexibility in object creation by allowing different ways to initialize objects.
+
+rules for constructor overloading
+---------------------------------
+1. constructor must have the same name as the class.
+2. must differ in parameters list(number, type or order).
+3. cannot have different return types(not even void).
+4. can have different access modifiers.
+
+Automatic promotion in method overloading
+------------------------------------------
+in overloading if compiler is unable to find the method with exact match we wont get any compile time error immediately 
+
+1st compiler promotes the argument to the next level and checks whether the matched method is available or not if it is available then the method will be consider if it is not available then compiler promotes the argument once again to the next level. this compiler will b continued until all promotions. still if the matched method is not available then we will get compiler-time error. this process is called automatic promotion in overloading.
